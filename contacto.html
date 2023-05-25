@@ -30,16 +30,16 @@
         </div>
         <h4>Atencion al cliente</h4>
         <div id="formulario">
-                <label for="">Ingrese correo electrinico:</label>
-                <input type="email" v-model="correo" >
+                <label for="">Ingrese correo electrinico: </label><br>
+                <input type="email" v-model="nuevoCorreo" ><br>
 
-                <label for="">Nombre o Empresa:</label>
-                <input type="text" v-model="nombre">
+                <label for="">Ingrese su nombre: </label><br>
+                <input type="text" v-model="nuevoNombre"><br>
 
-                <label for="">Asunto:</label>
-                <input type="text" v-model="mensaje">
+                <label for="">Ingrese un mesaje: </label><br>
+                <input type="text" v-model="nuevoMensaje"><br>
 
-                <button v-on:click="agregarDatos()"></button>
+                <button v-on:click="agregarDatos()">Enviar datos</button>
                 <ul>
                     <li v-for="cliente in clientes">
                         {{Cliente.correo}} - {{Cliente.nombre}} - {{cliente.mensaje}}
@@ -47,7 +47,7 @@
                 </ul>
         </div>
     </div>
-    <script src="https://unpkg.com/vue@3/dist/golbal.js"></script>
-    <script src="F:\Paginas\Impobiliaria\JS\consulta.js"> </script>
+    <script src="https://unpkg.com/browse/vue@3.3.4/dist/vue.global.js"></script>
+    <script src="JS/consulta.js"></script>
 </body>
 </html>

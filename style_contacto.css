@@ -75,21 +75,20 @@ body{
 	align-items: center;
 	width: 95%;
 	height: 80vh;
-	background-color: red;
+	background-color: #cabbbb;
 }
 .mapa h1{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1em;
 }
 .mapa{
-	background-color: #3264c7;
+	background-color: #7c89a1;
+	margin-right: 1vw;
 }
-.formulario{
-	height: 4em;
+#formulario{
 	background-color: #2d64d3;
-	opacity: 0.6;
 }
-.formulario button{
-	height: 80px;
+#formulario button{
+	height: 3em;
 	width: 80px;
 }
