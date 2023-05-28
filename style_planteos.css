@@ -24,6 +24,7 @@ body{
 	position:fixed;
 	display: flex;
 	width: 100%;
+	flex-wrap: wrap;
 	background-color:#f5f4f4;
 	align-items: flex-end;
 	justify-content: space-around;

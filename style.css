@@ -23,6 +23,7 @@ body{
 #inicio{
 	position:fixed;
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	background-color:#f5f4f4;
 	align-items: flex-end;
