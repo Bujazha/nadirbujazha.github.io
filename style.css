@@ -123,3 +123,22 @@ body{
 	border-radius: 20px;
 	color: #fffcfc;
 }
+.footer1{
+	
+	background-color: #414141;
+	display: flex;
+	width: 100%;
+}
+.footer1 h2{
+	color: white;
+	background-color: #414141;
+	font-size: 12px;
+}
+.icons{
+	margin-left: 20px;
+	background-color: #f5f4f4;
+	display: flex;
+}
+.icons img{
+	height: 2em;
+}

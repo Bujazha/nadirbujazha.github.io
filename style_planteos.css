@@ -2,6 +2,7 @@
 	margin: 0;
 }
 body{
+	align-content: center;
 	width: 100vw;
 	background-image: url(./imagenes/Ciudad-de-Barcelona.jpeg);
 	overflow-x: hidden;
@@ -124,4 +125,23 @@ body{
 	border: 2px solid #1d1c1c;
 	border-radius: 20px;
 	color: #fffcfc;
+}
+.footer1{
+	
+	background-color: #414141;
+	display: flex;
+	width: 100vw;
+}
+.footer1 h2{
+	color: white;
+	background-color: #414141;
+	font-size: 12px;
+}
+.icons{
+	margin-left: 20px;
+	background-color: #f5f4f4;
+	display: flex;
+}
+.icons img{
+	height: 2em;
 }

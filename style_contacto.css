@@ -3,6 +3,7 @@
 }
 body{
 	width: 100vw;
+	align-content: center;
 	background-color: rgb(39, 37, 37);
 	background-image: url(./imagenes/Ciudad-de-Barcelona.jpeg);
 	overflow-x: hidden;}
@@ -94,4 +95,23 @@ body{
 #formulario button{
 	height: 3em;
 	width: 80px;
+}
+.footer1{
+	
+	background-color: #414141;
+	display: flex;
+	width: 100%;
+}
+.footer1 h2{
+	color: white;
+	background-color: #414141;
+	font-size: 12px;
+}
+.icons{
+	margin-left: 20px;
+	background-color: #f5f4f4;
+	display: flex;
+}
+.icons img{
+	height: 2em;
 }
