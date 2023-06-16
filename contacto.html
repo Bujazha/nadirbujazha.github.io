@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style_contacto.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script defer src="../JS/consulta.js"></script>
+</head>
+<body>
+    <header id="inicio">
+        <div class="contenedor_header">
+            <img src="../imagenes/logo.png">
+            <a href="../HTML/index.html">Ignova Studio</a>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="../HTML/planteos_estructurales.html">Planteos estructurales</a></li>
+                <li><a href="../HTML/diseños.html">Diseños</a></li>
+                <li><a href="../HTML/contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="espacio_blanco"></div>
+    <div class="contenedor">
+        <div class="mapa"> 
+            <h2>Encontranos en Av. Aconquija al 2700 YB.</h2>
+            <h4>Tambien podes llamarnos al 3816492341 y comunicate con Nadir Bujazha</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8469.31586313504!2d-65.31016986337639!3d-26.811036393462818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942243daf800270d%3A0x38337bf2f983470e!2sEl%20Mes%C3%B3n%20del%20Pato!5e0!3m2!1ses!2sar!4v1678731886416!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen=""  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="form">
+        <h4>Atencion al cliente</h4>
+        <p>Por dudas o sugerencias, por favor, escribinos.</p>
+
+          <form id="formulario" action="https://formspree.io/f/xjvdnovr" method="POST" onsubmit="return validarFormulario()">
+    
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" class="input">
+    
+            <label for="apellido">Apellido</label>
+            <input size="30" type="text" name="apellido" id="apellido" class="input"><br>
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="input">
+    
+            <fieldset>
+
+              <legend>Asunto</legend>
+
+                <label><input type="radio" name="gender" value="Contenido">Servicio de obra</label>
+                <label><input type="radio" name="gender" value="Servicio">Desarrollo de proyectos y planos</label>
+                <label><input type="radio" name="gender" value="Otro">Otro</label>
+            </fieldset>
+            
+              <label for="mesaje">Comentario</label>
+              <textarea name="comentarios" id="mensaje" rows="10" cols="30"></textarea>
+    
+            <label><input type="checkbox" checked>Quiero recibir novedades</label>
+    
+            <div class="button">
+              <input name="enviar" type="submit" value="Enviar" class="btn btn-primary">
+              <input name="reset" type="reset" value="Borrar" class="btn btn-primary">
+            </div>
+    
+          </form>
+    
+        </div>
+    
+        <!--<div id="formulario">
+                <label for="">Ingrese correo electrinico: </label><br>
+                <input type="email" v-model="nuevoCorreo" ><br>
+
+                <label for="">Ingrese su nombre: </label><br>
+                <input type="text" v-model="nuevoNombre"><br>
+
+                <label for="">Ingrese un mesaje: </label><br>
+                <input type="text" v-model="nuevoMensaje"><br>
+
+                <button v-on:click="agregarDatos()">Enviar datos</button>
+                <ul>
+                    <li v-for="cliente in clientes">
+                        {{Cliente.correo}} - {{Cliente.nombre}} - {{cliente.mensaje}}
+                    </li>
+                </ul>
+        </div>
+        -->
+    </div>
+    <footer class="footer1">
+        <h2>Asociacion de arquitectos - Derechos reservados </h2>
+        <div class="icons">
+          <img src="../imagenes/ins.png">
+          <img src="../imagenes/face.png">
+          <img src="../imagenes/wha.png">
+        </div>
+      </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</body>
+</html>
