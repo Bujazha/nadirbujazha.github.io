@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+}
+body{
+	width: 100vw;
+	align-content: center;
+	background-color: rgb(39, 37, 37);
+	background-image: url(../imagenes/Ciudad-de-Barcelona.jpeg);
+	overflow-x: hidden;}
+
+/*Si la pag es viste en un telefono*/
+@media screen and (max-width: 625px){
+	#formulario{
+		width: 80vw;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.form{
+		height: auto;
+		width: 95vw;
+	}
+	.mapa iframe{
+		width: 100vw;
+		height: 30vh;
+	}
+}
+
+@media only screen and (max-width: 930px){
+	.inicio a{background-color: blueviolet;}
+}
+/*Si la pag es vista en un monitor*/
+#inicio{
+	position:fixed;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color:#f5f4f4;
+	align-items: flex-end;
+	justify-content: space-around;
+	z-index: 10;
+}
+.contenedor_header{
+	background-color:#f5f4f4;
+	display: flex;
+	align-items: center;
+	align-items: flex-end;
+}
+.contenedor_header img{
+	width: 20vh;
+}
+.contenedor_header a{
+	text-decoration: none;
+	color: #2b2c2e;
+	font-size: 1.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: #a79d9d 2px 2px 1px;
+}
+#menu{
+	box-sizing: border-box;
+	height: 1.5em;
+}
+#menu>ul{
+	background-color:#f5f4f4;
+	display: flex;
+}
+#menu li{
+	margin-right: 5em;
+	list-style: none;
+}
+#menu a{
+	text-decoration: none;
+	color: #2b2c2e;
+}
+#menu a:hover{
+	color: #ff5500;
+}
+.espacio_blanco{
+	height: 10vh;
+}
+.contenedor{
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100vw;
+	background-color: #e6e0e0;
+	border-radius: 1em;
+}
+.mapa h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+.mapa{
+	background-color: #e4e5e7;
+	margin-right: 1vw;
+}
+#formulario{
+	padding: 2em;
+	background: linear-gradient(rgba(125, 179, 250, 0.75),rgba(63, 52, 52, 0.281));
+	border-radius: 1em;
+}
+.footer1{
+	background-color: #414141;
+	display: flex;
+	width: 100%;
+}
+.footer1 h2{
+	color: white;
+	background-color: #414141;
+	font-size: 12px;
+}
+.icons{
+	margin-left: 20px;
+	background-color: #f5f4f4;
+	display: flex;
+}
+.icons img{
+	height: 2em;
+}
